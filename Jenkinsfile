@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools tools {
+    tools {
   maven 'M2_HOME'
 }
       triggers {
@@ -20,12 +20,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('test') {
-            steps {
-                echo 'test'
-
-            }
-        }
+        
         stage('deploy') {
             steps {
                 echo 'deploy'
