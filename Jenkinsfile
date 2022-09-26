@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/Tekoe1985/Geolocation.git'
+                git branch: 'main', url:'https://github.com/Tekoe1985/Geolocation.git'
             }
         }
         stage('Code Build') {
